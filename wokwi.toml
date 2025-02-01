@@ -1,4 +1,0 @@
-[wokwi]
-version = 1
-firmware = 'build/interrupt1.uf2'
-elf = 'build/interrupt1.elf'
