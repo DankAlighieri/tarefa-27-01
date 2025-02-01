@@ -24,17 +24,17 @@ Desenvolvido em C utilizando:
 
 ### Fluxo de Operação:
 
-1. Botão A pressionado:
+1. **Botão A pressionado:**
     - É  chamada uma interrupção pelo hardware, o processador mantém o LED piscando, enquanto o contador interno
     é incrementado e o número exibido na matriz de LEDs é atualizado
     - Caso o número anterior ao incremento seja nove, a lógica interna fará com que ele cicle de volta ao zero,
     exibindo-o na matriz e impedindo que o programa não responda ou dê stackOverflow
-2. Botão B pressionado:
+2. **Botão B pressionado:**
     - É  chamada uma interrupção pelo hardware, o processador mantém o LED piscando, enquanto o contador interno
     é decrementado e o número exibido na matriz de LEDs é atualizado 
     - Caso o número anterior ao decremento seja 0, a lógica interna fará com que ele cicle de volta ao nove,
     exibindo-o na matriz e impedindo que o programa não responda ou dê stackOverflow
-3. Botão do joystick pressionado
+3. **Botão do joystick pressionado:**
     - Caso seja a primeira vez, a matriz de leds será apagada
     - Caso seja a segunda vez, a matriz de leds irá acender no estado inicial (Mostrando o número zero).
 
@@ -43,7 +43,8 @@ Desenvolvido em C utilizando:
 As interrupções são gerenciadas pelas IRQs do GPIO, que acionam um callback *gpio_irq_callback*, onde toda a lógica da interrupção
 é realizada.
 
-### Vídeo da placa
+### 📹 Vídeo da placa  
+🔗 **[Vídeo da placa em funcionamento](https://sendvid.com/g2mok17p)**  
 
 
 
