@@ -64,6 +64,7 @@ static void gpio_irq_handler(uint gpio, uint32_t events) {
         counter = (counter + 1) % 10;
         last_time_a = current_time;
     }
+    
     // Verifica se é o botão B e realiza o debounce
     else if(gpio == BTN_PIN_B && current_time - last_time_b > 200000) {
         // Decrementa o contador, caso seja 0, pula para o 9
@@ -72,8 +73,7 @@ static void gpio_irq_handler(uint gpio, uint32_t events) {
         last_time_b = current_time;
     }
 
-    else if (gpio == JOYSTICK_BTN_PIN && current_time - last_time_joy > 200000) {
-        
+    else if (gpio == JOYSTICK_BTN_PIN && current_time - last_time_joy > 200000) {  
         if (!last_state_joy)
             counter = 10;
         else 
