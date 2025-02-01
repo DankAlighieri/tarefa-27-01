@@ -43,7 +43,7 @@ Desenvolvido em C utilizando:
 As interrupções são gerenciadas pelas IRQs do GPIO, que acionam um callback *gpio_irq_callback*, onde toda a lógica da interrupção
 é realizada.
 
-### 📹 Vídeo da placa  
+## 📹 Vídeo da placa  
 🔗 **[Vídeo da placa em funcionamento](https://sendvid.com/g2mok17p)**  
 
 
