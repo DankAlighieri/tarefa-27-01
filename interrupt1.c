@@ -28,14 +28,13 @@ int main() {
     pio = pio0;
     sm = configurar_matriz(pio, MATRIX_PIN);  
     // Starting at zero
-    //imprimir_desenho(*numeros[0], pio, sm);
+    imprimir_desenho(*numeros[0], pio, sm);
 
     gpio_set_irq_enabled_with_callback(BTN_PIN_A, GPIO_IRQ_EDGE_FALL, true, gpio_irq_handler);
     gpio_set_irq_enabled_with_callback(BTN_PIN_B, GPIO_IRQ_EDGE_FALL, true, gpio_irq_handler);
 
     while (true) {
-        imprimir_desenho(*numeros[10], pio, sm);
-        //blink(LED_R);
+        blink(LED_R);
     }
 }
 
