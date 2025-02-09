@@ -46,6 +46,9 @@ As interrupções são gerenciadas pelas IRQs do GPIO, que acionam um callback *
 ## 📹 Vídeo da placa  
 🔗 **[Vídeo da placa em funcionamento](https://sendvid.com/g2mok17p)**  
 
+## Como executar
+
+O Projeto pode ser executado clonando este repositório e importando como projeto pico no Visual Studio Code
 
 
 ## 👥 Autoria
